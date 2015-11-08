@@ -6,11 +6,6 @@
 package a.donde.comemos;
 
 import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.Image;
-import maps.java.MapsJava;
-import maps.java.StaticMaps;
 
 
 /**
@@ -22,7 +17,7 @@ public class Principal extends javax.swing.JFrame {
     /**
      * Creates new form Principal
      */
-        private static String USER_NAME = "adondecomemosentegus@gmail.com";  // GMail user name (just the part before "@gmail.com")
+    private static String USER_NAME = "adondecomemosentegus@gmail.com";  // GMail user name (just the part before "@gmail.com")
     private static String PASSWORD = "Hacktegus2015"; // GMail password
     private String RECIPIENT;
     
