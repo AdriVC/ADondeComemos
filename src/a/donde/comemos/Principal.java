@@ -104,13 +104,15 @@ public class Principal extends javax.swing.JFrame {
         jP_comida.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         jP_comida.add(jL_ubicacion_coordenadas, new org.netbeans.lib.awtextra.AbsoluteConstraints(124, 392, -1, -1));
 
-        jB_comida_retorno.setText("back");
+        jB_comida_retorno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/a/donde/comemos/atras.png"))); // NOI18N
+        jB_comida_retorno.setBorderPainted(false);
+        jB_comida_retorno.setContentAreaFilled(false);
         jB_comida_retorno.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jB_comida_retornoMouseClicked(evt);
             }
         });
-        jP_comida.add(jB_comida_retorno, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 60, 60));
+        jP_comida.add(jB_comida_retorno, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 40, 30));
 
         jLabel10.setText("COMIDA");
         jP_comida.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 40, -1, -1));
@@ -148,31 +150,38 @@ public class Principal extends javax.swing.JFrame {
         jCB_comida_especifico.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jP_comida.add(jCB_comida_especifico, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, 250, 30));
 
-        jB_comida_aceptar.setText("ok");
+        jB_comida_aceptar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/a/donde/comemos/checked21.png"))); // NOI18N
+        jB_comida_aceptar.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jB_comida_aceptar.setBorderPainted(false);
+        jB_comida_aceptar.setContentAreaFilled(false);
         jB_comida_aceptar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jB_comida_aceptarMouseClicked(evt);
             }
         });
-        jP_comida.add(jB_comida_aceptar, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 350, 90, 90));
+        jP_comida.add(jB_comida_aceptar, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 370, 90, 90));
 
         jP_dinero.setBackground(new java.awt.Color(255, 204, 0));
         jP_dinero.setForeground(new java.awt.Color(255, 204, 0));
         jP_dinero.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jB_dinero_retorno.setText("back");
+        jB_dinero_retorno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/a/donde/comemos/atras.png"))); // NOI18N
+        jB_dinero_retorno.setBorderPainted(false);
+        jB_dinero_retorno.setContentAreaFilled(false);
         jB_dinero_retorno.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jB_dinero_retornoMouseClicked(evt);
             }
         });
-        jP_dinero.add(jB_dinero_retorno, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 63, 61));
+        jP_dinero.add(jB_dinero_retorno, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 30, 30));
 
         jLabel6.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         jLabel6.setText("DINERO");
         jP_dinero.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 70, -1, -1));
 
-        jB_dinero_aceptar.setText("ok");
+        jB_dinero_aceptar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/a/donde/comemos/checked21.png"))); // NOI18N
+        jB_dinero_aceptar.setBorderPainted(false);
+        jB_dinero_aceptar.setContentAreaFilled(false);
         jB_dinero_aceptar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jB_dinero_aceptarMouseClicked(evt);
@@ -183,7 +192,7 @@ public class Principal extends javax.swing.JFrame {
                 jB_dinero_aceptarActionPerformed(evt);
             }
         });
-        jP_dinero.add(jB_dinero_aceptar, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 280, 100, 91));
+        jP_dinero.add(jB_dinero_aceptar, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 301, 70, 70));
 
         jLabel7.setText("Maximo que desea gastar:");
         jP_dinero.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 128, -1, -1));
@@ -213,13 +222,15 @@ public class Principal extends javax.swing.JFrame {
         jP_resultados.setForeground(new java.awt.Color(0, 153, 153));
         jP_resultados.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jB_resultados_retorno.setText("back");
+        jB_resultados_retorno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/a/donde/comemos/atras.png"))); // NOI18N
+        jB_resultados_retorno.setBorderPainted(false);
+        jB_resultados_retorno.setContentAreaFilled(false);
         jB_resultados_retorno.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jB_resultados_retornoMouseClicked(evt);
             }
         });
-        jP_resultados.add(jB_resultados_retorno, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 57, 58));
+        jP_resultados.add(jB_resultados_retorno, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 30, 30));
 
         jLabel13.setText("RESULTADOS");
         jP_resultados.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(115, 70, -1, -1));
@@ -323,13 +334,15 @@ public class Principal extends javax.swing.JFrame {
         jP_ubicacion.setForeground(new java.awt.Color(0, 0, 204));
         jP_ubicacion.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jB_ubicacion_retorno.setText("back");
+        jB_ubicacion_retorno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/a/donde/comemos/atras.png"))); // NOI18N
+        jB_ubicacion_retorno.setBorderPainted(false);
+        jB_ubicacion_retorno.setContentAreaFilled(false);
         jB_ubicacion_retorno.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jB_ubicacion_retornoMouseClicked(evt);
             }
         });
-        jP_ubicacion.add(jB_ubicacion_retorno, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 56, 52));
+        jP_ubicacion.add(jB_ubicacion_retorno, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 30, 30));
 
         jLabel9.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
@@ -388,7 +401,9 @@ public class Principal extends javax.swing.JFrame {
 
         jP_sugerencias.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 235, 282, 134));
 
-        jB_sugerencias_enviar.setText("Enviar");
+        jB_sugerencias_enviar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/a/donde/comemos/checked21.png"))); // NOI18N
+        jB_sugerencias_enviar.setBorderPainted(false);
+        jB_sugerencias_enviar.setContentAreaFilled(false);
         jB_sugerencias_enviar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jB_sugerencias_enviarMouseClicked(evt);
@@ -396,13 +411,15 @@ public class Principal extends javax.swing.JFrame {
         });
         jP_sugerencias.add(jB_sugerencias_enviar, new org.netbeans.lib.awtextra.AbsoluteConstraints(101, 387, 92, 93));
 
-        jB_sugerencias_retorno.setText("Back");
+        jB_sugerencias_retorno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/a/donde/comemos/atras.png"))); // NOI18N
+        jB_sugerencias_retorno.setBorderPainted(false);
+        jB_sugerencias_retorno.setContentAreaFilled(false);
         jB_sugerencias_retorno.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jB_sugerencias_retornoMouseClicked(evt);
             }
         });
-        jP_sugerencias.add(jB_sugerencias_retorno, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 57, 55));
+        jP_sugerencias.add(jB_sugerencias_retorno, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 30, 30));
 
         jLabel3.setFont(new java.awt.Font("Courier", 0, 14)); // NOI18N
         jLabel3.setText("Si encontro un error o falta ");

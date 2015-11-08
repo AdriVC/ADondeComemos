@@ -113,14 +113,18 @@
             </Component>
             <Component class="javax.swing.JButton" name="jB_comida_retorno">
               <Properties>
-                <Property name="text" type="java.lang.String" value="back"/>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/a/donde/comemos/atras.png"/>
+                </Property>
+                <Property name="borderPainted" type="boolean" value="false"/>
+                <Property name="contentAreaFilled" type="boolean" value="false"/>
               </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jB_comida_retornoMouseClicked"/>
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="10" y="10" width="60" height="60"/>
+                  <AbsoluteConstraints x="0" y="10" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -220,14 +224,23 @@
             </Component>
             <Component class="javax.swing.JButton" name="jB_comida_aceptar">
               <Properties>
-                <Property name="text" type="java.lang.String" value="ok"/>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/a/donde/comemos/checked21.png"/>
+                </Property>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                    <EtchetBorder/>
+                  </Border>
+                </Property>
+                <Property name="borderPainted" type="boolean" value="false"/>
+                <Property name="contentAreaFilled" type="boolean" value="false"/>
               </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jB_comida_aceptarMouseClicked"/>
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="100" y="350" width="90" height="90"/>
+                  <AbsoluteConstraints x="100" y="370" width="90" height="90"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -249,14 +262,18 @@
           <SubComponents>
             <Component class="javax.swing.JButton" name="jB_dinero_retorno">
               <Properties>
-                <Property name="text" type="java.lang.String" value="back"/>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/a/donde/comemos/atras.png"/>
+                </Property>
+                <Property name="borderPainted" type="boolean" value="false"/>
+                <Property name="contentAreaFilled" type="boolean" value="false"/>
               </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jB_dinero_retornoMouseClicked"/>
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="6" y="6" width="63" height="61"/>
+                  <AbsoluteConstraints x="6" y="6" width="30" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -275,7 +292,11 @@
             </Component>
             <Component class="javax.swing.JButton" name="jB_dinero_aceptar">
               <Properties>
-                <Property name="text" type="java.lang.String" value="ok"/>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/a/donde/comemos/checked21.png"/>
+                </Property>
+                <Property name="borderPainted" type="boolean" value="false"/>
+                <Property name="contentAreaFilled" type="boolean" value="false"/>
               </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jB_dinero_aceptarMouseClicked"/>
@@ -283,7 +304,7 @@
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="110" y="280" width="100" height="91"/>
+                  <AbsoluteConstraints x="140" y="301" width="70" height="70"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -355,14 +376,18 @@
           <SubComponents>
             <Component class="javax.swing.JButton" name="jB_resultados_retorno">
               <Properties>
-                <Property name="text" type="java.lang.String" value="back"/>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/a/donde/comemos/atras.png"/>
+                </Property>
+                <Property name="borderPainted" type="boolean" value="false"/>
+                <Property name="contentAreaFilled" type="boolean" value="false"/>
               </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jB_resultados_retornoMouseClicked"/>
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="6" y="6" width="57" height="58"/>
+                  <AbsoluteConstraints x="6" y="6" width="30" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -626,14 +651,18 @@
           <SubComponents>
             <Component class="javax.swing.JButton" name="jB_ubicacion_retorno">
               <Properties>
-                <Property name="text" type="java.lang.String" value="back"/>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/a/donde/comemos/atras.png"/>
+                </Property>
+                <Property name="borderPainted" type="boolean" value="false"/>
+                <Property name="contentAreaFilled" type="boolean" value="false"/>
               </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jB_ubicacion_retornoMouseClicked"/>
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="6" y="6" width="56" height="52"/>
+                  <AbsoluteConstraints x="6" y="6" width="30" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -780,7 +809,11 @@
             </Container>
             <Component class="javax.swing.JButton" name="jB_sugerencias_enviar">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Enviar"/>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/a/donde/comemos/checked21.png"/>
+                </Property>
+                <Property name="borderPainted" type="boolean" value="false"/>
+                <Property name="contentAreaFilled" type="boolean" value="false"/>
               </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jB_sugerencias_enviarMouseClicked"/>
@@ -793,14 +826,18 @@
             </Component>
             <Component class="javax.swing.JButton" name="jB_sugerencias_retorno">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Back"/>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/a/donde/comemos/atras.png"/>
+                </Property>
+                <Property name="borderPainted" type="boolean" value="false"/>
+                <Property name="contentAreaFilled" type="boolean" value="false"/>
               </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jB_sugerencias_retornoMouseClicked"/>
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="6" y="6" width="57" height="55"/>
+                  <AbsoluteConstraints x="6" y="6" width="30" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
