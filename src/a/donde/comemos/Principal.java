@@ -9,9 +9,6 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Image;
-import maps.java.MapsJava;
-import maps.java.StaticMaps;
-
 
 /**
  *
@@ -22,10 +19,10 @@ public class Principal extends javax.swing.JFrame {
     /**
      * Creates new form Principal
      */
-        private static String USER_NAME = "adondecomemosentegus@gmail.com";  // GMail user name (just the part before "@gmail.com")
+    private static String USER_NAME = "adondecomemosentegus@gmail.com";  // GMail user name (just the part before "@gmail.com")
     private static String PASSWORD = "Hacktegus2015"; // GMail password
     private String RECIPIENT;
-    
+
     public Principal() {
         initComponents();
         jP_principal.setVisible(true);
@@ -231,14 +228,16 @@ public class Principal extends javax.swing.JFrame {
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-
+                {"furiwa", "arroz",  new Integer(100),  new Double(2.0)},
+                {"los toneles", "pastelitos",  new Integer(50),  new Double(1.5)},
+                {null, null, null, null}
             },
             new String [] {
                 "Restaurante", "Comida", "Precio", "Distancia"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.Integer.class
+                java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.Double.class
             };
 
             public Class getColumnClass(int columnIndex) {
@@ -247,7 +246,7 @@ public class Principal extends javax.swing.JFrame {
         });
         jScrollPane2.setViewportView(jTable1);
 
-        jP_resultados.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 104, 280, 283));
+        jP_resultados.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 104, 380, 283));
 
         jP_principal.setBackground(new java.awt.Color(0, 153, 0));
         jP_principal.setForeground(new java.awt.Color(0, 102, 0));
@@ -435,7 +434,7 @@ public class Principal extends javax.swing.JFrame {
         jLayeredPane1.setLayout(jLayeredPane1Layout);
         jLayeredPane1Layout.setHorizontalGroup(
             jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jP_comida, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 301, Short.MAX_VALUE)
+            .addComponent(jP_comida, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 413, Short.MAX_VALUE)
             .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(jP_principal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -445,7 +444,7 @@ public class Principal extends javax.swing.JFrame {
             .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(jP_sugerencias, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(jP_resultados, javax.swing.GroupLayout.DEFAULT_SIZE, 301, Short.MAX_VALUE))
+                .addComponent(jP_resultados, javax.swing.GroupLayout.PREFERRED_SIZE, 301, Short.MAX_VALUE))
         );
         jLayeredPane1Layout.setVerticalGroup(
             jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -507,8 +506,8 @@ public class Principal extends javax.swing.JFrame {
         jP_comida.setVisible(false);
         jP_dinero.setVisible(false);
         jP_resultados.setVisible(false);
-        jTF_sugerencias_correo.setForeground(new Color(153,153,153));
-        jTA_sugerencias_texto.setForeground(new Color(153,153,153));
+        jTF_sugerencias_correo.setForeground(new Color(153, 153, 153));
+        jTA_sugerencias_texto.setForeground(new Color(153, 153, 153));
         jTA_sugerencias_texto.setText("Sugerencia");
         jTF_sugerencias_correo.setText("alguien@correo.com");
     }//GEN-LAST:event_jB_principal_filtroSugerenciasMouseClicked
@@ -533,7 +532,7 @@ public class Principal extends javax.swing.JFrame {
         jP_comida.setVisible(false);
         jP_dinero.setVisible(false);
         jP_resultados.setVisible(false);
-        
+
     }//GEN-LAST:event_jB_principal_filtroUbicacionMouseClicked
 
     private void jB_principal_BuscarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jB_principal_BuscarMouseClicked
@@ -548,14 +547,14 @@ public class Principal extends javax.swing.JFrame {
 
     private void jB_sugerencias_enviarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jB_sugerencias_enviarMouseClicked
         // TODO add your handling code here:
-        email e= new email();
+        email e = new email();
         boolean validacion = false;
-        if(!jTA_sugerencias_texto.getText().equals("Sugerencia") && !jTF_sugerencias_correo.getText().equals("alguien@correo.com") && !jTA_sugerencias_texto.getText().equals("Gracias por su aporte, su sugerencia ha sido registrada")){
-            if(!jTF_sugerencias_correo.getText().isEmpty() && !jTA_sugerencias_texto.getText().isEmpty()){
+        if (!jTA_sugerencias_texto.getText().equals("Sugerencia") && !jTF_sugerencias_correo.getText().equals("alguien@correo.com") && !jTA_sugerencias_texto.getText().equals("Gracias por su aporte, su sugerencia ha sido registrada")) {
+            if (!jTF_sugerencias_correo.getText().isEmpty() && !jTA_sugerencias_texto.getText().isEmpty()) {
                 validacion = true;
-            } 
+            }
         }
-        if(validacion){
+        if (validacion) {
             jTA_sugerencias_texto.setText("Gracias por su aporte, su sugerencia ha sido registrada");
             RECIPIENT = jTF_sugerencias_correo.getText();
             String from = USER_NAME;
@@ -567,7 +566,7 @@ public class Principal extends javax.swing.JFrame {
             e.sendFromGMail(from, pass, us, subject, body);
             e.sendFromGMail(from, pass, to, subject, "Su sugerencia fue recibida");
         }
-             
+
     }//GEN-LAST:event_jB_sugerencias_enviarMouseClicked
 
     private void jB_sugerencias_retornoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jB_sugerencias_retornoMouseClicked
@@ -615,14 +614,14 @@ public class Principal extends javax.swing.JFrame {
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
         rango = jSlider1.getValue();
         System.out.println(rango);
-        jL_principal_buscarDistancia.setText("A: "+rango/1000 + " km");
+        jL_principal_buscarDistancia.setText("A: " + rango / 1000 + " km");
         jP_principal.setVisible(true);
         jP_sugerencias.setVisible(false);
         jP_ubicacion.setVisible(false);
         jP_comida.setVisible(false);
         jP_dinero.setVisible(false);
         jP_resultados.setVisible(false);
-        
+
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void jS_dinero_maximoStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jS_dinero_maximoStateChanged
@@ -636,7 +635,7 @@ public class Principal extends javax.swing.JFrame {
 
     private void jB_dinero_aceptarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jB_dinero_aceptarMouseClicked
         // TODO add your handling code here:
-        jL_principal_buscarPrecio.setText("POR: Lps "+jTF_dinero_valor.getText());
+        jL_principal_buscarPrecio.setText("POR: Lps " + jTF_dinero_valor.getText());
         jP_principal.setVisible(true);
         jP_sugerencias.setVisible(false);
         jP_ubicacion.setVisible(false);
@@ -677,10 +676,22 @@ public class Principal extends javax.swing.JFrame {
 
     private void jCB_comida_filtrosItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_jCB_comida_filtrosItemStateChanged
         // TODO add your handling code here:
-        if(jCB_comida_filtros.getSelectedIndex() != 4){
-            jP_comida_esconder.setVisible(false);
-            jCB_comida_especifico.setEnabled(true);
-        }else{
+        if (jCB_comida_filtros.getSelectedIndex() != 4) {
+            if (jCB_comida_filtros.getSelectedIndex() == 0) {
+                jP_comida_esconder.setVisible(false);
+                jCB_comida_especifico.setEnabled(true);
+                
+            } else if (jCB_comida_filtros.getSelectedIndex() == 1) {
+                jP_comida_esconder.setVisible(false);
+                jCB_comida_especifico.setEnabled(true);
+            } else if (jCB_comida_filtros.getSelectedIndex() == 2) {
+                jP_comida_esconder.setVisible(false);
+                jCB_comida_especifico.setEnabled(true);
+            } else if (jCB_comida_filtros.getSelectedIndex() == 3) {
+                jP_comida_esconder.setVisible(false);
+                jCB_comida_especifico.setEnabled(true);
+            }
+        } else {
             jP_comida_esconder.setVisible(true);
             jCB_comida_especifico.setEnabled(false);
         }
